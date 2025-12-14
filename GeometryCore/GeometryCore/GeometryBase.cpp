@@ -16,16 +16,16 @@ Vector Vector::operator*(fType scalar) const {
 }
 
 Vector Vector::operator/(fType scalar) const {
-	if(std::abs(scalar) < Elipson)
+	if(std::abs(scalar) < Epsilon)
 		return Vector(this->dx / scalar, this->dy / scalar);
 	throw std::invalid_argument("Vector cannot divide by 0.");
 }
 
 bool Vector::operator==(const Vector& other) const {
-	return Elipson > std::abs(this->dx - other.dx) && Elipson > std::abs(this->dy - other.dy);
+	return Epsilon > std::abs(this->dx - other.dx) && Epsilon > std::abs(this->dy - other.dy);
 }
 bool Vector::operator!=(const Vector& other) const {
-	return Elipson < std::abs(this->dx - other.dx) || Elipson < std::abs(this->dy - other.dy);
+	return Epsilon < std::abs(this->dx - other.dx) || Epsilon < std::abs(this->dy - other.dy);
 
 	// return !(*this == other)
 }
@@ -35,7 +35,7 @@ fType Vector::length() const {
 
 Vector Vector::normalized() const {
 	fType len = length();
-	if (std::abs(len) < Elipson) { return Vector(0, 0); }
+	if (std::abs(len) < Epsilon) { return Vector(0, 0); }
 	return Vector(this->dx / len, this->dy / len);
 
 }
@@ -73,7 +73,7 @@ Vector Point::operator-(const Point& other) const {
 }
 
 bool Point::operator==(const Point& other) const {
-	return std::abs(x - other.x) < Elipson && std::abs(y - other.y) < Elipson;
+	return std::abs(x - other.x) < Epsilon && std::abs(y - other.y) < Epsilon;
 }
 
 bool Point::operator!=(const Point& other) const {

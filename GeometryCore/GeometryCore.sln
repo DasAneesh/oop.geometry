@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36717.8 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeometryCore", "GeometryCore\GeometryCore.vcxproj", "{688AB8E6-BCCD-4DC4-AEE8-DB9DE07B9436}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeometryCoreTest", "GeometryCoreTest\GeometryCoreTest.vcxproj", "{392C43A5-2F22-4464-856D-DC2B14754B52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{688AB8E6-BCCD-4DC4-AEE8-DB9DE07B9436}.Release|x64.Build.0 = Release|x64
 		{688AB8E6-BCCD-4DC4-AEE8-DB9DE07B9436}.Release|x86.ActiveCfg = Release|Win32
 		{688AB8E6-BCCD-4DC4-AEE8-DB9DE07B9436}.Release|x86.Build.0 = Release|Win32
+		{392C43A5-2F22-4464-856D-DC2B14754B52}.Debug|x64.ActiveCfg = Debug|x64
+		{392C43A5-2F22-4464-856D-DC2B14754B52}.Debug|x64.Build.0 = Debug|x64
+		{392C43A5-2F22-4464-856D-DC2B14754B52}.Debug|x86.ActiveCfg = Debug|Win32
+		{392C43A5-2F22-4464-856D-DC2B14754B52}.Debug|x86.Build.0 = Debug|Win32
+		{392C43A5-2F22-4464-856D-DC2B14754B52}.Release|x64.ActiveCfg = Release|x64
+		{392C43A5-2F22-4464-856D-DC2B14754B52}.Release|x64.Build.0 = Release|x64
+		{392C43A5-2F22-4464-856D-DC2B14754B52}.Release|x86.ActiveCfg = Release|Win32
+		{392C43A5-2F22-4464-856D-DC2B14754B52}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

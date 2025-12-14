@@ -3,7 +3,7 @@
 #include <iostream>
 
 using fType = double;
-const fType Elipson= 1e-6;
+const fType Epsilon = 1e-6;
 
 class Point;
 
@@ -12,7 +12,7 @@ public:
 
 	fType dx, dy;
 
-	Vector(fType dx = 0, fType dy = 0) {}
+	Vector(fType dx = 0, fType dy = 0);
 
 	//operators
 	Vector operator+(const Vector& other) const;
@@ -37,7 +37,7 @@ class Point {
 public:
 	fType x, y;
 
-	Point(fType x = 0, fType y = 0) {}
+	Point(fType x = 0, fType y = 0);
 	Point(const Vector& v);
 
 	//operators
